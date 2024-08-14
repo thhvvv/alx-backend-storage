@@ -25,4 +25,4 @@ def data_catcher(method: Callable) -> Callable:
 @data_cacher
 def get_page(url: str) -> str:
     """obtain html content of a url and returns it"""
-    return requests.get(url.text
+    return requests.get(url).text
